@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Feel In Saudia Cafeteria – Menu</title>
+<style>
+:root{--bg:#f1d9b5;--card:#fbefd8;--ink:#3a1a10;--mut:#7a5a45;--brand:#5a2a17;--acc:#c8421e;--line:#d9b88a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#241209;--card:#34190d;--ink:#f6e3c6;--mut:#c4a07c;--brand:#120804;--acc:#ff7a45;--line:#5a3520}}
+:root[data-theme="dark"]{--bg:#241209;--card:#34190d;--ink:#f6e3c6;--mut:#c4a07c;--brand:#120804;--acc:#ff7a45;--line:#5a3520}
+*{box-sizing:border-box}html{scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif;padding-bottom:90px}
+header{background:var(--brand);color:#f6e3c6;text-align:center;padding:34px 16px 26px}
+h1{margin:0;font:900 clamp(30px,8vw,54px)/1 Impact,"Arial Black",sans-serif;letter-spacing:.04em}
+.sub{margin-top:8px;font:600 14px Arial,sans-serif;letter-spacing:.5em;color:#f0b27a}
+.acts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.acts a{font:700 14px Arial,sans-serif;text-decoration:none;padding:10px 16px;border-radius:999px;background:#25d366;color:#06310f}
+.acts a.g{background:transparent;border:1.5px solid #f0b27a;color:#f6e3c6}
+nav{position:sticky;top:0;z-index:5;background:var(--brand);display:flex;gap:8px;overflow-x:auto;padding:10px 12px}
+nav button{flex:none;border:1px solid #7a4a30;background:none;color:#f6e3c6;border-radius:999px;padding:7px 14px;font:600 13px Arial,sans-serif;cursor:pointer}
+nav button:focus-visible,.add:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+main{max-width:760px;margin:0 auto;padding:8px 14px}
+section h2{font:800 26px Impact,"Arial Black",sans-serif;letter-spacing:.05em;margin:28px 0 12px;color:var(--brand)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) section h2{color:var(--acc)}}
+.item{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin-bottom:10px}
+.ph{flex:none;width:64px;height:64px;border-radius:12px;background:var(--bg);display:grid;place-items:center;font-size:36px}
+.nm{flex:1;min-width:0;font-size:17px;font-weight:700}
+.nm small{display:block;font:400 12.5px Arial,sans-serif;color:var(--mut);margin-top:2px}
+.pr{display:flex;flex-direction:column;gap:6px;align-items:stretch}
+.add{border:0;background:var(--acc);color:#fff;border-radius:10px;padding:8px 12px;font:700 14px Arial,sans-serif;cursor:pointer;white-space:nowrap}
+.add span{opacity:.85;font-weight:500;margin-left:4px}
+.add.alt{background:transparent;color:var(--acc);border:1.5px solid var(--acc)}
+.ask{font:600 13px Arial,sans-serif;color:var(--mut)}
+#bar{position:fixed;left:0;right:0;bottom:0;background:var(--brand);color:#f6e3c6;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));display:none;align-items:center;gap:12px;z-index:9}
+#bar.on{display:flex}#bar div{flex:1;font:600 15px Arial,sans-serif}
+#bar button{border:0;border-radius:10px;padding:11px 16px;font:800 15px Arial,sans-serif;cursor:pointer;background:#25d366;color:#06310f}
+#bar .clr{background:none;color:#f0b27a;padding:11px 4px;font-weight:600}
+#sh{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;z-index:20;align-items:flex-end;justify-content:center}#sh.on{display:flex}
+.pnl{background:var(--bg);width:100%;max-width:560px;max-height:92%;overflow:auto;border-radius:18px 18px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom,0px));font-family:Arial,sans-serif}
+.pnl h3{margin:0 0 10px;font:800 22px Impact,"Arial Black",sans-serif;letter-spacing:.04em;color:var(--brand)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}
+.q button{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:18px;cursor:pointer;margin:0 8px}
+.tt{display:flex;justify-content:space-between;font-weight:800;padding:10px 0;font-size:17px}
+.seg{display:flex;gap:8px;margin:8px 0}.seg label{flex:1;text-align:center;border:1.5px solid var(--line);border-radius:10px;padding:10px;font-weight:700;cursor:pointer}
+.seg input{position:absolute;opacity:0}.seg label:has(input:checked){background:var(--acc);border-color:var(--acc);color:#fff}
+.seg label:has(input:focus-visible){outline:3px solid var(--acc);outline-offset:2px}
+.pnl input[type=text],.pnl input[type=tel],.pnl textarea{width:100%;font:16px Arial,sans-serif;padding:11px;margin:5px 0;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+.pnl label.l{font:700 13px Arial,sans-serif;color:var(--mut);display:block;margin-top:8px}
+#wa{display:block;text-align:center;text-decoration:none;background:#25d366;color:#06310f;font:800 16px Arial,sans-serif;padding:14px;border-radius:12px;margin-top:12px}
+.sm{font:13px Arial,sans-serif;color:var(--mut);margin:8px 0}.er{color:#c0261b;font:700 13px Arial,sans-serif;min-height:18px}
+.ln{background:none;border:0;color:var(--acc);font:700 14px Arial,sans-serif;cursor:pointer;padding:8px 0}
+footer{text-align:center;color:var(--mut);font:13px Arial,sans-serif;padding:20px 16px}
+footer a{color:var(--acc)}
+</style></head><body>
+<header>
+<h1>FEEL IN SAUDIA</h1><div class="sub">CAFETERIA</div>
+<div class="acts"><a href="https://wa.me/917799609021?text=Hi%20Feel%20In%20Saudia%20Cafeteria%2C%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener">Order on WhatsApp</a><a class="g" href="https://share.google/18hjvE68x1lc51pLf" target="_blank" rel="noopener">Find us on Google</a></div>
+</header>
+<nav id="nav"></nav>
+<main id="menu"></main>
+<div id="bar"><div id="sum"></div><button class="clr" id="clr">Clear</button><button id="send">Checkout</button></div>
+<div id="sh"><div class="pnl" role="dialog" aria-label="Checkout"><h3>Your order</h3><div id="rows"></div><div class="tt"><span>Items total</span><span id="tot"></span></div>
+<div class="seg"><label><input type="radio" name="ty" value="d" checked>Home delivery</label><label><input type="radio" name="ty" value="p">Pickup</label></div>
+<label class="l" for="fn">Your name</label><input type="text" id="fn" autocomplete="name">
+<label class="l" for="fp">Phone number</label><input type="tel" id="fp" autocomplete="tel">
+<div id="dl"><label class="l" for="fa">Delivery address (house no., street, area)</label><textarea id="fa" rows="3" autocomplete="street-address"></textarea>
+<label class="l" for="fl">Landmark</label><input type="text" id="fl"></div>
+<label class="l" for="ft">Note for the kitchen (optional)</label><input type="text" id="ft" placeholder="Less spicy, extra sauce...">
+<div class="sm">Delivery charge and time are confirmed by the cafeteria on WhatsApp.</div><div class="er" id="er"></div>
+<a id="wa" href="https://wa.me/917799609021" target="_blank" rel="noopener">Send order on WhatsApp</a>
+<button class="ln" id="cp">WhatsApp did not open? Copy order</button><textarea id="ot" rows="6" readonly style="display:none"></textarea><div class="sm" id="cm"></div>
+<button class="ln" id="cl">Back to menu</button></div></div>
+<footer>Prices in ₹. Order on WhatsApp: <a href="https://wa.me/917799609021" target="_blank" rel="noopener">+91 77996 09021</a> · <a href="https://share.google/18hjvE68x1lc51pLf" target="_blank" rel="noopener">Rate us on Google</a></footer>
+<script>
+var M=[
+["Shawarma",[["Mutton Samoli","🌯",120,130],["Mutton Rumali","🌯",120,130],["Mutton Qabus","🥙",130,140],["Chicken Samoli","🌯",130,140],["Chicken Rumali","🌯",130,140],["Chicken Qabus","🥙",140,150]],1],
+["Wraps",[["Chicken Zinger Wrap","🌯",140],["Mutton Wrap","🌯",140],["Nugget Wrap","🌯",120],["Cheese Chicken Zinger Wrap","🧀",160],["Cheese Mutton Wrap","🧀",160]]],
+["Burger",[["Beef Smash Burger","🍔",150],["Chicken Zinger Burger (Spicy)","🌶️",140],["Chicken Zinger Burger (Sweet)","🍔",140],["Beef Smash Burger (Double Patty)","🍔",260]]],
+["Platter",[["Zinger Chicken Platter","🍗",200],["Smokey Chicken Platter","🍗",200],["Mutton Platter","🍖",200],["50/50 Platter","🍽️",210]]],
+["Appetizers",[["Chicken Strips (6 Pcs)","🍗",210],["Chicken Strips (4 Pcs)","🍗",140],["Chicken Popcorn (10-15 pcs)","🍿",130],["Chicken Nugget (8 Pcs)","🍗",120],["Masala Fries (Peri Peri)","🍟",110],["French Fries (Salted)","🍟",100]]],
+["Broasted Chicken",[["Broasted Chicken, Half Bird (4 Pcs)","🍗",250],["Broasted Chicken, Full Bird (8 Pcs)","🍗",460]]],
+["Extras",[["Extra Patty","🥩",110],["Extra Mutton","🍖",80],["Extra Chicken","🍗",80],["Extra Cheese","🧀",20],["Extra Rumali Roti","🫓",15],["Extra Bun","🍞",15],["Burger Sauce","🥫",10],["Mayonase","🥫",10],["Cool Drinks","🥤",0]]]
+];
+var cart={},menu=document.getElementById("menu"),nav=document.getElementById("nav"),h="";
+M.forEach(function(s,i){
+nav.innerHTML+='<button data-s="s'+i+'">'+s[0]+'</button>';
+h+='<section id="s'+i+'"><h2>'+s[0]+'</h2>';
+s[1].forEach(function(it,j){
+var k=i+"_"+j,b;
+if(it[3]){b='<button class="add" data-k="'+k+'" data-v="0">Regular<span>₹'+it[2]+'</span></button><button class="add alt" data-k="'+k+'" data-v="1">Spl, no salad<span>₹'+it[3]+'</span></button>'}
+else if(it[2]===0){b='<span class="ask">Ask at counter</span>'}
+else{b='<button class="add" data-k="'+k+'" data-v="0">Add<span>₹'+it[2]+'</span></button>'}
+h+='<div class="item"><div class="ph" aria-hidden="true">'+it[1]+'</div><div class="nm">'+it[0]+(it[3]?'<small>Regular or special without salad</small>':'')+'</div><div class="pr">'+b+'</div></div>'});
+h+='</section>'});
+menu.innerHTML=h;
+nav.onclick=function(e){var s=e.target.getAttribute("data-s");if(s)document.getElementById(s).scrollIntoView({behavior:"smooth"})};
+menu.onclick=function(e){var t=e.target.closest(".add");if(!t)return;var key=t.dataset.k+"_"+t.dataset.v;cart[key]=(cart[key]||0)+1;upd()};
+function lines(){var out=[],tot=0,n=0;for(var key in cart){var p=key.split("_"),it=M[p[0]][1][p[1]],spl=p[2]==="1",pr=spl?it[3]:it[2],q=cart[key];tot+=pr*q;n+=q;out.push(q+" x "+it[0]+(it[3]?(spl?" (Spl, no salad)":" (Regular)"):"")+" = ₹"+pr*q)}return{out:out,tot:tot,n:n}}
+function upd(){var c=lines();document.getElementById("bar").className=c.n?"on":"";document.getElementById("sum").textContent=c.n+" item"+(c.n>1?"s":"")+" · ₹"+c.tot}
+document.getElementById("clr").onclick=function(){cart={};upd()};
+var sh=document.getElementById("sh"),wa=document.getElementById("wa"),$=function(i){return document.getElementById(i)},v=function(i){return $(i).value.trim()};
+function dlv(){return document.querySelector("input[name=ty]:checked").value==="d"}
+function msg(){var c=lines(),d=dlv();return "Hello Feel In Saudia Cafeteria, I would like to place an order:\n\n"+c.out.join("\n")+"\n\nItems total: ₹"+c.tot+"\nOrder type: "+(d?"Home delivery":"Pickup")+"\nName: "+v("fn")+"\nPhone: "+v("fp")+(d?"\nAddress: "+v("fa")+"\nLandmark: "+v("fl"):"")+(v("ft")?"\nNote: "+v("ft"):"")+"\n\nPlease confirm the total and delivery time."}
+function draw(){var h="";for(var key in cart){var p=key.split("_"),it=M[p[0]][1][p[1]],s=p[2]==="1";h+='<div class="row"><span>'+it[0]+(it[3]?(s?" (Spl)":" (Reg)"):"")+'</span><span class="q"><button data-k="'+key+'" data-d="-1" aria-label="Remove one">−</button>'+cart[key]+'<button data-k="'+key+'" data-d="1" aria-label="Add one">+</button></span></div>'}
+$("rows").innerHTML=h;$("tot").textContent="₹"+lines().tot;$("dl").style.display=dlv()?"":"none";wa.href="https://wa.me/917799609021?text="+encodeURIComponent(msg())}
+$("send").onclick=function(){sh.className="on";draw()};
+$("cl").onclick=function(){sh.className=""};
+sh.oninput=sh.onchange=draw;
+$("rows").onclick=function(e){var k=e.target.getAttribute("data-k");if(!k)return;cart[k]+=+e.target.getAttribute("data-d");if(cart[k]<1)delete cart[k];upd();if(!lines().n){sh.className="";return}draw()};
+wa.onclick=function(e){var m=!v("fn")||!v("fp")||(dlv()&&!v("fa"));if(m){e.preventDefault();$("er").textContent=dlv()?"Please fill in your name, phone and delivery address.":"Please fill in your name and phone.";return}$("er").textContent=""};
+$("cp").onclick=function(){var t=msg(),o=$("ot");o.value=t;try{navigator.clipboard.writeText(t).then(function(){$("cm").textContent="Order copied. Paste it in a WhatsApp chat with +91 77996 09021."},function(){o.style.display="block";o.select();$("cm").textContent="Copy the text above and send it to +91 77996 09021 on WhatsApp."})}catch(x){o.style.display="block";$("cm").textContent="Copy the text above and send it to +91 77996 09021 on WhatsApp."}};
+</script></body></html>
